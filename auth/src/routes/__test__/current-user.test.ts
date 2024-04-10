@@ -31,8 +31,8 @@ describe('Current User Route', () => {
     const response = await request(app)
       .get('/api/users/currentuser')
       .send()
-      .expect(401);
+      .expect(200);
 
-    expect(response.body.currentUser).toBeUndefined();
+      expect(response.body.currentUser).toEqual(null);
   });
 });
