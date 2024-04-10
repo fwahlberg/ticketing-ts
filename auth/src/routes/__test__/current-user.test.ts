@@ -33,6 +33,6 @@ describe('Current User Route', () => {
       .send()
       .expect(200);
 
-    expect(response.body.currentUser).toBeUndefined();
+      expect(response.body.currentUser).toEqual(null);
   });
 });
