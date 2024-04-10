@@ -1,0 +1,20 @@
+{
+  "name": "rabbit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "ts-node-dev --notify false src/publisher.ts",
+    "listen": "ts-node-dev --notify false src/listener.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/node": "^20.11.30",
+    "amqplib": "^0.10.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  }
+}
